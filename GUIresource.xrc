@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwindows.org/wxxrc" version="2.3.0.1">
+	<object class="wxPanel" name="MyPanel1">
+		<size>500,300</size>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxButton" name="m_button1">
+					<label>MyButton</label>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+				<border>5</border>
+			</object>
+			<object class="sizeritem">
+				<object class="wxStaticText" name="m_staticText1">
+					<label>MyLabel</label>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+				<border>5</border>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="SimpleDialog">
+		<title>Simple dialog</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxTextCtrl" name="text">
+					<value>Zażółć gęślą jaźń</value>
+				</object>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>10</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer">
+					<object class="sizeritem">
+						<object class="wxButton" name="clickme_btn">
+							<label>Click</label>
+						</object>
+						<flag>wxRIGHT</flag>
+						<border>10</border>
+					</object>
+					<object class="sizeritem">
+						<object class="wxButton" name="wxID_OK">
+							<label>OK</label>
+						</object>
+						<flag>wxLEFT</flag>
+						<border>10</border>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+				<border>10</border>
+			</object>
+		</object>
+	</object>
+</resource>
